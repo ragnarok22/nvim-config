@@ -28,6 +28,7 @@ vim.opt.showmode = false
 -- Set highlight on search
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Case insensitive searching UNLESS /C or capital in search
 vim.o.ignorecase = true
