@@ -76,7 +76,6 @@ return {
 
       require('mason-lspconfig').setup({
         ensure_installed = {
-          'tsserver',
           'pyright',
           'tailwindcss',
           'lua_ls',
