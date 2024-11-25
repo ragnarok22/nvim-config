@@ -14,9 +14,15 @@ map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '<-2<CR>gv=gv")
 
 -- center Pagination
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
 
 -- search and keep the search in the middle of the screen
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
+map("n", "n", "nzzzv")
+map("n", "N", "Nzzzv")
+
+-- debugger
+map("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>")
+map("n", "<leader>dpr", function()
+  require("dap-python").test_method()
+end)
