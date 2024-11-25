@@ -12,8 +12,8 @@ return {
 
   {
     "ragnarok22/whereami.nvim",
-    cmd = "Whereami"
   },
+  { "mistricky/codesnap.nvim", build = "make" },
   -- integrate tmux with nvim
   { "christoomey/vim-tmux-navigator", event = "BufReadPre" },
 }
