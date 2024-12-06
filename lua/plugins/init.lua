@@ -76,13 +76,17 @@ return {
       },
     },
   },
-  {
-    "github/copilot.vim",
-    lazy = false,
-  },
+  -- {
+  --   "github/copilot.vim",
+  --   lazy = false,
+  -- },
   "ragnarok22/whereami.nvim",
   {
     "christoomey/vim-tmux-navigator",
     event = "BufReadPre",
+  },
+  {
+    "Exafunction/codeium.vim",
+    event = "BufEnter",
   },
 }
