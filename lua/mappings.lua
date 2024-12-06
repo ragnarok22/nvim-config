@@ -21,6 +21,9 @@ map("n", "<C-u>", "<C-u>zz")
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
+-- Fuzzy finds
+map("n", "<leader><leader>", "<CMD> Telescope buffers <CR>", { desc = "Find Buffers" })
+
 -- debugger
 map("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>")
 map("n", "<leader>dpr", function()

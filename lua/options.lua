@@ -4,8 +4,10 @@ vim.opt.rnu = true
 vim.opt.scrolloff = 8
 
 local o = vim.o
-o.cursorlineopt ='both' -- to enable cursorline!
+o.cursorlineopt = "both" -- to enable cursorline!
 
+-- no text wrapping
+o.wrap = false
 
 -- Highlight on yank
 -- See `:help vim.highlight.on_yank()`
