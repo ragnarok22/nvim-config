@@ -28,3 +28,10 @@ lspconfig.pyright.setup {
   capabilities = nvlsp.capabilities,
   filetypes = { "python" },
 }
+
+lspconfig.tailwindcss.setup {
+  on_attach = nvlsp.on_attach,
+  on_init = nvlsp.on_init,
+  capabilities = nvlsp.capabilities,
+  filetypes = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact" },
+}

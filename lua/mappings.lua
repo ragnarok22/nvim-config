@@ -29,3 +29,5 @@ map("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>")
 map("n", "<leader>dpr", function()
   require("dap-python").test_method()
 end)
+
+map("n", "<leader>lg", "<cmd> LazyGit <CR>")
