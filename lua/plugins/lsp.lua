@@ -197,6 +197,19 @@ return {
               },
               -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
               -- diagnostics = { disable = { 'missing-fields' } },
+              diagnostics = {
+                globals = { 'vim' },
+              },
+              workspace = {
+                library = {
+                  vim.fn.expand '$VIMRUNTIME/lua',
+                  vim.fn.expand '$VIMRUNTIME/lua/vim/lsp',
+                  vim.fn.stdpath 'data' .. '/lazy/lazy.nvim/lua/lazy',
+                  '${3rd}/luv/library',
+                },
+                maxPreload = 100000,
+                preloadFileSize = 10000,
+              },
             },
           },
         },
