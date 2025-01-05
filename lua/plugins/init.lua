@@ -23,6 +23,28 @@ return {
     opts = { signs = false },
   },
 
+  {
+    'Exafunction/codeium.vim',
+    event = 'BufEnter',
+  },
+
+  {
+
+    'kdheepak/lazygit.nvim',
+    cmd = {
+      'LazyGit',
+      'LazyGitConfig',
+      'LazyGitCurrentFile',
+      'LazyGitFilter',
+      'LazyGitFilterCurrentFile',
+    },
+    -- optional for floating window border decoration
+    dependencies = { 'nvim-lua/plenary.nvim' },
+  },
+  keys = {
+    { '<leader>lg', '<CMD>LazyGit<CR>', desc = 'Open LazyGit' },
+  },
+
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
     config = function()
