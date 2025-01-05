@@ -1,8 +1,3 @@
-require 'config.lazy'
-
-require 'config.options'
-require 'config.keymaps'
-
 -- [[ Basic Autocommands ]]
 
 -- Highlight when yanking (copying) text
@@ -21,3 +16,8 @@ vim.cmd [[
   autocmd BufRead * autocmd FileType <buffer> ++once
   \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
 ]]
+
+require 'config.lazy'
+
+require 'config.options'
+require 'config.keymaps'
