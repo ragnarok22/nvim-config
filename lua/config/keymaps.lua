@@ -48,3 +48,5 @@ vim.keymap.set('n', '<leader>v', ':vsplit<CR>', { desc = 'Open vertical split' }
 
 -- Git
 vim.keymap.set('n', '<leader>gs', vim.cmd.Git, { desc = 'Git status' })
+
+vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>', { desc = 'Open LazyGit' })
