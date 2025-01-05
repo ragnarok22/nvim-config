@@ -2,6 +2,12 @@ return {
   'ragnarok22/whereami.nvim',
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
+  {
+    'windwp/nvim-autopairs',
+    event = 'InsertEnter',
+    config = true,
+  },
+
   -- Highlight todo, notes, etc in comments
   {
     'folke/todo-comments.nvim',
