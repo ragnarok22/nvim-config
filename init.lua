@@ -1,7 +1,7 @@
-require("config.lazy")
+require 'config.lazy'
 
-require("config.options")
-require("config.keymaps")
+require 'config.options'
+require 'config.keymaps'
 
 -- [[ Basic Autocommands ]]
 
@@ -15,3 +15,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+-- Save the last cursor position
+vim.cmd [[
+  autocmd BufRead * autocmd FileType <buffer> ++once
+  \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
+]]
