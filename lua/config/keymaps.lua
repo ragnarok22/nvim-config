@@ -49,4 +49,7 @@ vim.keymap.set('n', '<leader>v', ':vsplit<CR>', { desc = 'Open vertical split' }
 -- Git
 vim.keymap.set('n', '<leader>gs', vim.cmd.Git, { desc = 'Git status' })
 
+-- Open LazyGit
 vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>', { desc = 'Open LazyGit' })
+
+vim.keymap.set('n', '<Esc>', '<CMD>noh<CR>', { desc = 'Clear search highlight' })

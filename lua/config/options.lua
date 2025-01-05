@@ -8,8 +8,17 @@ vim.opt.showmode = false
 -- Enable break indent
 vim.opt.breakindent = true
 
+vim.o.expandtab = true
+vim.o.shiftwidth = 2
+vim.o.smartindent = true
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+
 -- Save undo history
 vim.opt.undofile = true
+
+-- interval for writing swap file to disk, also used by gitsigns
+vim.o.updatetime = 250
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
@@ -48,3 +57,9 @@ vim.o.cursorline = true
 
 -- no text wrapping
 vim.o.wrap = false
+
+-- disable some default providers
+vim.g.loaded_node_provider = 0
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
