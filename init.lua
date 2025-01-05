@@ -12,10 +12,18 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- Save the last cursor position
-vim.cmd [[
-  autocmd BufRead * autocmd FileType <buffer> ++once
-  \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
-]]
+local autocmd = vim.api.nvim_create_autocmd
+
+-- This autocmd will restore cursor position on file open
+autocmd('BufReadPost', {
+  pattern = '*',
+  callback = function()
+    local line = vim.fn.line '\'"'
+    if line > 1 and line <= vim.fn.line '$' and vim.bo.filetype ~= 'commit' and vim.fn.index({ 'xxd', 'gitrebase' }, vim.bo.filetype) == -1 then
+      vim.cmd 'normal! g`"'
+    end
+  end,
+})
 
 require 'config.lazy'
 

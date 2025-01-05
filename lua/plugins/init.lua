@@ -45,6 +45,17 @@ return {
     { '<leader>lg', '<CMD>LazyGit<CR>', desc = 'Open LazyGit' },
   },
 
+  {
+    'christoomey/vim-tmux-navigator',
+    event = 'VimEnter',
+    keys = {
+      { '<C-h>', '<CMD>TmuxNavigateLeft<CR>', desc = 'Tmux left' },
+      { '<C-j>', '<CMD>TmuxNavigateDown<CR>', desc = 'Tmux down' },
+      { '<C-k>', '<CMD>TmuxNavigateUp<CR>', desc = 'Tmux up' },
+      { '<C-l>', '<CMD>TmuxNavigateRight<CR>', desc = 'Tmux right' },
+    },
+  },
+
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
     config = function()
