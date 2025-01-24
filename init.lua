@@ -1,3 +1,6 @@
+-- HOT FIXES
+vim.hl = vim.highlight
+
 -- [[ Basic Autocommands ]]
 
 -- Highlight when yanking (copying) text
