@@ -66,7 +66,13 @@ _G.open_github_url = function()
 end
 
 local function is_valid_package_repo(str)
-  return str:match '^[^%s/]+/[^%s/]+$' ~= nil
+  local has_repo_format = str:match '^[^%s/]+/[^%s/]+$' ~= nil
+
+  local config_path = vim.fn.stdpath 'config'
+  local current_path = vim.fn.expand '%:p:h'
+  local is_nvim_config_path = current_path:find(config_path, 1, true)
+
+  return has_repo_format and is_nvim_config_path
 end
 
 local group = vim.api.nvim_create_augroup('nvim_popupmenu', { clear = true })
