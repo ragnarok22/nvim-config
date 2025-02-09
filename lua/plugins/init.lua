@@ -22,12 +22,6 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' },
     opts = { signs = false },
   },
-
-  {
-    'Exafunction/codeium.vim',
-    event = 'BufEnter',
-  },
-
   {
 
     'kdheepak/lazygit.nvim',

@@ -111,6 +111,7 @@ return { -- Autocompletion
         { name = 'path' },
         { name = 'buffer' },
         { name = 'nvim_lua' },
+        { name = 'codeium' },
       },
     }
   end,
