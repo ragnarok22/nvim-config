@@ -9,7 +9,7 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '<C-i>', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    { '<C-i>', ':Neotree toggle<CR>', desc = 'NeoTree toggle', silent = true },
   },
   opts = {
     close_if_last_window = true,
