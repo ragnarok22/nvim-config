@@ -1,6 +1,8 @@
 -- HOT FIXES
 vim.hl = vim.highlight
 
+vim.g.have_nerd_font = true
+
 -- [[ Basic Autocommands ]]
 
 -- Highlight when yanking (copying) text
