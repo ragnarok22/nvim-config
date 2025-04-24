@@ -6,7 +6,6 @@ return {
     -- add any opts here
     -- for example
     provider = 'openai',
-    auto_suggestions_provider = 'claude',
     openai = {
       endpoint = 'https://api.openai.com/v1',
       model = 'gpt-4.1', -- your desired model (or use gpt-4o, etc.)
@@ -20,9 +19,6 @@ return {
       model = 'claude-3-7-sonnet-latest',
       temperature = 0,
       max_tokens = 4096,
-    },
-    behaviour = {
-      auto_suggestions = true,
     },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
