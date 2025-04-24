@@ -3,4 +3,4 @@ test.sh
 nvim
 
 spell/
-.DS
+.DS_Store
