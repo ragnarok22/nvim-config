@@ -1,6 +1,6 @@
 return {
   'Exafunction/windsurf.nvim',
-  event = 'BufEnter',
+  enabled = false,
   dependencies = {
     'nvim-lua/plenary.nvim',
     'hrsh7th/nvim-cmp',
