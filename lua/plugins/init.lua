@@ -23,8 +23,8 @@ return {
     opts = { signs = false },
   },
   {
-
     'kdheepak/lazygit.nvim',
+    lazy = true,
     cmd = {
       'LazyGit',
       'LazyGitConfig',
