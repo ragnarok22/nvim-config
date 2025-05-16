@@ -27,7 +27,14 @@ return { -- Autocompletion
         --   end,
         -- },
       },
-      opts = {},
+      opts = {
+        sources = {
+          default = { 'lsp', 'path', 'snippets', 'buffer', 'codeium' },
+          providers = {
+            codeium = { name = 'Codeium', module = 'codeium.blink', async = true },
+          },
+        },
+      },
     },
     'folke/lazydev.nvim',
   },

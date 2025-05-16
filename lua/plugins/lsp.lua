@@ -25,7 +25,6 @@ return {
       -- Useful status updates for LSP.
       { 'j-hui/fidget.nvim', opts = {} },
 
-      -- Allows extra capabilities provided by nvim-cmp
       -- Allows extra capabilities provided by blink.cmp
       'saghen/blink.cmp',
     },

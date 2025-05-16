@@ -3,8 +3,6 @@ return {
   event = 'VeryLazy',
   version = false, -- Never set this value to "*"! Never!
   opts = {
-    -- add any opts here
-    -- for example
     provider = 'claude',
     openai = {
       endpoint = 'https://api.openai.com/v1',
@@ -30,7 +28,10 @@ return {
     'MunifTanjim/nui.nvim',
     --- The below dependencies are optional,
     'echasnovski/mini.pick', -- for file_selector provider mini.pick
+    'nvim-telescope/telescope.nvim', -- for file_selector provider telescope
+    'hrsh7th/nvim-cmp', -- autocompletion for avante commands and mentions
     'ibhagwan/fzf-lua', -- for file_selector provider fzf
+    'nvim-tree/nvim-web-devicons', -- or echasnovski/mini.icons
     {
       -- support for image pasting
       'HakonHarnes/img-clip.nvim',
