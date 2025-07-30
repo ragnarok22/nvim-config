@@ -54,6 +54,8 @@ vim.keymap.set('n', '<leader>gs', vim.cmd.Git, { desc = 'Git status' })
 -- Open LazyGit
 vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>', { desc = 'Open LazyGit' })
 
+-- Clear highlights on search when pressing <Esc> in normal mode
+--  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<CMD>noh<CR>', { desc = 'Clear search highlight' })
 
 vim.keymap.set('n', '<leader>e', '<CMD> lua vim.diagnostic.open_float() <CR>', { desc = 'Show diagnostics' })
