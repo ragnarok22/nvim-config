@@ -24,6 +24,9 @@ NVIM_APPNAME=ragnarok22/nvim-config/ nvim
 
 ## Plugins
 
+### ai
+
++ [yetone/avante.nvim](https://dotfyle.com/plugins/yetone/avante.nvim)
 ### colorscheme
 
 + [catppuccin/nvim](https://dotfyle.com/plugins/catppuccin/nvim)
@@ -33,6 +36,7 @@ NVIM_APPNAME=ragnarok22/nvim-config/ nvim
 ### completion
 
 + [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
++ [zbirenbaum/copilot.lua](https://dotfyle.com/plugins/zbirenbaum/copilot.lua)
 ### debugging
 
 + [mfussenegger/nvim-dap](https://dotfyle.com/plugins/mfussenegger/nvim-dap)
@@ -41,6 +45,7 @@ NVIM_APPNAME=ragnarok22/nvim-config/ nvim
 
 + [windwp/nvim-autopairs](https://dotfyle.com/plugins/windwp/nvim-autopairs)
 + [nvim-treesitter/nvim-treesitter-context](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter-context)
++ [folke/snacks.nvim](https://dotfyle.com/plugins/folke/snacks.nvim)
 ### file-explorer
 
 + [nvim-neo-tree/neo-tree.nvim](https://dotfyle.com/plugins/nvim-neo-tree/neo-tree.nvim)
@@ -50,6 +55,8 @@ NVIM_APPNAME=ragnarok22/nvim-config/ nvim
 ### fuzzy-finder
 
 + [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
++ [ibhagwan/fzf-lua](https://dotfyle.com/plugins/ibhagwan/fzf-lua)
++ [echasnovski/mini.pick](https://dotfyle.com/plugins/echasnovski/mini.pick)
 ### git
 
 + [lewis6991/gitsigns.nvim](https://dotfyle.com/plugins/lewis6991/gitsigns.nvim)
@@ -57,6 +64,7 @@ NVIM_APPNAME=ragnarok22/nvim-config/ nvim
 ### icon
 
 + [nvim-tree/nvim-web-devicons](https://dotfyle.com/plugins/nvim-tree/nvim-web-devicons)
++ [echasnovski/mini.icons](https://dotfyle.com/plugins/echasnovski/mini.icons)
 ### indent
 
 + [lukas-reineke/indent-blankline.nvim](https://dotfyle.com/plugins/lukas-reineke/indent-blankline.nvim)
@@ -65,12 +73,13 @@ NVIM_APPNAME=ragnarok22/nvim-config/ nvim
 + [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
 + [mfussenegger/nvim-lint](https://dotfyle.com/plugins/mfussenegger/nvim-lint)
 + [j-hui/fidget.nvim](https://dotfyle.com/plugins/j-hui/fidget.nvim)
-### lsp-installer
+### markdown-and-latex
 
-+ [williamboman/mason.nvim](https://dotfyle.com/plugins/williamboman/mason.nvim)
++ [OXY2DEV/markview.nvim](https://dotfyle.com/plugins/OXY2DEV/markview.nvim)
++ [MeanderingProgrammer/render-markdown.nvim](https://dotfyle.com/plugins/MeanderingProgrammer/render-markdown.nvim)
 ### media
 
-+ [3rd/image.nvim](https://dotfyle.com/plugins/3rd/image.nvim)
++ [HakonHarnes/img-clip.nvim](https://dotfyle.com/plugins/HakonHarnes/img-clip.nvim)
 ### nvim-dev
 
 + [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
@@ -95,6 +104,7 @@ NVIM_APPNAME=ragnarok22/nvim-config/ nvim
 + [nvim-treesitter/nvim-treesitter-textobjects](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter-textobjects)
 ### utility
 
++ [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
 + [echasnovski/mini.nvim](https://dotfyle.com/plugins/echasnovski/mini.nvim)
 + [ragnarok22/whereami.nvim](https://dotfyle.com/plugins/ragnarok22/whereami.nvim)
 ## Language Servers
