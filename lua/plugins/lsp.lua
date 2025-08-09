@@ -274,4 +274,6 @@ return {
       }
     end,
   },
+  -- TS errors easy to read
+  { 'dmmulroy/ts-error-translator.nvim' },
 }
