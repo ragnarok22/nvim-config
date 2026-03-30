@@ -45,7 +45,13 @@ local theme = {
     fold_section = false,
     title = 'Footer',
     margin = 5,
-    content = { 'startup.nvim' },
+    content = function()
+      local plugin_name = 'startup.nvim'
+
+      local version = vim.version()
+      local version_string = 'nvim ' .. version.major .. '.' .. version.minor .. '.' .. version.patch
+      return { version_string, plugin_name }
+    end,
     highlight = 'Number',
     default_color = '',
     oldfiles_amount = 0,
