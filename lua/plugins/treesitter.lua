@@ -5,8 +5,17 @@ return { -- Highlight, edit, and navigate code
   build = ':TSUpdate',
   config = function()
     require('nvim-treesitter').install {
-      'bash', 'diff', 'html', 'lua', 'luadoc',
-      'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc',
+      'bash',
+      'diff',
+      'html',
+      'lua',
+      'luadoc',
+      'tsx',
+      'markdown',
+      'markdown_inline',
+      'query',
+      'vim',
+      'vimdoc',
     }
 
     -- Enable treesitter highlighting and indentation for all supported filetypes
