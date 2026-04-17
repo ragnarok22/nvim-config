@@ -15,17 +15,18 @@ return {
       harpoon.ui:toggle_quick_menu(harpoon:list())
     end, { desc = 'Open Harpoon menu' })
 
-    for i = 1, 4 do
-      vim.keymap.set('n', '<leader>' .. i, function()
+    local slot_keys = { 'a', 's', 'd', 'f' }
+    for i, key in ipairs(slot_keys) do
+      vim.keymap.set('n', '<leader>m' .. key, function()
         harpoon:list():select(i)
       end, { desc = 'Harpoon slot ' .. i })
     end
 
-    vim.keymap.set('n', '<C-S-J>', function()
+    vim.keymap.set('n', '[h', function()
       harpoon:list():prev()
-    end)
-    vim.keymap.set('n', '<C-S-K>', function()
+    end, { desc = 'Harpoon prev' })
+    vim.keymap.set('n', ']h', function()
       harpoon:list():next()
-    end)
+    end, { desc = 'Harpoon next' })
   end,
 }
