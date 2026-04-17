@@ -27,6 +27,7 @@ NVIM_APPNAME=ragnarok22/nvim-config/ nvim
 ### ai
 
 + [yetone/avante.nvim](https://dotfyle.com/plugins/yetone/avante.nvim)
++ [Exafunction/windsurf.nvim](https://dotfyle.com/plugins/Exafunction/windsurf.nvim)
 ### colorscheme
 
 + [catppuccin/nvim](https://dotfyle.com/plugins/catppuccin/nvim)
@@ -37,6 +38,7 @@ NVIM_APPNAME=ragnarok22/nvim-config/ nvim
 
 + [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
 + [zbirenbaum/copilot.lua](https://dotfyle.com/plugins/zbirenbaum/copilot.lua)
++ [saghen/blink.cmp](https://dotfyle.com/plugins/saghen/blink.cmp)
 ### debugging
 
 + [mfussenegger/nvim-dap](https://dotfyle.com/plugins/mfussenegger/nvim-dap)
@@ -73,6 +75,9 @@ NVIM_APPNAME=ragnarok22/nvim-config/ nvim
 + [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
 + [mfussenegger/nvim-lint](https://dotfyle.com/plugins/mfussenegger/nvim-lint)
 + [j-hui/fidget.nvim](https://dotfyle.com/plugins/j-hui/fidget.nvim)
+### lsp-installer
+
++ [mason-org/mason.nvim](https://dotfyle.com/plugins/mason-org/mason.nvim)
 ### markdown-and-latex
 
 + [OXY2DEV/markview.nvim](https://dotfyle.com/plugins/OXY2DEV/markview.nvim)
@@ -80,6 +85,7 @@ NVIM_APPNAME=ragnarok22/nvim-config/ nvim
 ### media
 
 + [HakonHarnes/img-clip.nvim](https://dotfyle.com/plugins/HakonHarnes/img-clip.nvim)
++ [SergioRibera/codeshot.nvim](https://dotfyle.com/plugins/SergioRibera/codeshot.nvim)
 ### nvim-dev
 
 + [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
@@ -88,6 +94,7 @@ NVIM_APPNAME=ragnarok22/nvim-config/ nvim
 ### plugin-manager
 
 + [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
++ [alex-popov-tech/store.nvim](https://dotfyle.com/plugins/alex-popov-tech/store.nvim)
 ### snippet
 
 + [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
