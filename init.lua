@@ -12,15 +12,12 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
   group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
   callback = function()
-    vim.hl.on_yank()
+    (vim.hl or vim.highlight).on_yank()
   end,
 })
 
--- Save the last cursor position
-local autocmd = vim.api.nvim_create_autocmd
-
--- This autocmd will restore cursor position on file open
-autocmd('BufReadPost', {
+-- Restore last cursor position on file open
+vim.api.nvim_create_autocmd('BufReadPost', {
   pattern = '*',
   callback = function()
     local line = vim.fn.line '\'"'

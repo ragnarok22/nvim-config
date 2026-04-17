@@ -27,14 +27,6 @@ return { -- Autocompletion
         --   end,
         -- },
       },
-      opts = {
-        sources = {
-          default = { 'lsp', 'path', 'snippets', 'buffer', 'codeium' },
-          providers = {
-            codeium = { name = 'Codeium', module = 'codeium.blink', async = true },
-          },
-        },
-      },
     },
     'folke/lazydev.nvim',
   },
@@ -82,9 +74,10 @@ return { -- Autocompletion
     },
 
     sources = {
-      default = { 'lsp', 'path', 'snippets', 'lazydev' },
+      default = { 'lsp', 'path', 'snippets', 'lazydev', 'buffer', 'codeium' },
       providers = {
         lazydev = { module = 'lazydev.integrations.blink', score_offset = 100 },
+        codeium = { name = 'Codeium', module = 'codeium.blink', async = true },
       },
     },
 

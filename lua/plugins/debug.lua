@@ -142,7 +142,5 @@ return {
         detached = vim.fn.has 'win32' == 0,
       },
     }
-    local path = '~/.local/share/nvim/mason/packages/debugpy/venv/bin/python'
-    require('dap-python').setup(path)
   end,
 }
