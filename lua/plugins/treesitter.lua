@@ -10,6 +10,7 @@ return { -- Highlight, edit, and navigate code
       'html',
       'lua',
       'luadoc',
+      'python',
       'tsx',
       'markdown',
       'markdown_inline',
