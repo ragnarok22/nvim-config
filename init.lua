@@ -1,7 +1,7 @@
--- HOT FIXES
--- vim.hl = vim.highlight
-
 vim.g.have_nerd_font = true
+
+-- Enable faster startup by caching compiled Lua modules
+vim.loader.enable()
 
 -- [[ Basic Autocommands ]]
 
