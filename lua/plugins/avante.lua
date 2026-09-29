@@ -23,7 +23,7 @@ return {
         },
       },
     },
-    provider = 'copilot',
+    provider = 'openai',
     file_selector = { provider = 'telescope' },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
@@ -32,6 +32,7 @@ return {
     'nvim-treesitter/nvim-treesitter',
     'nvim-lua/plenary.nvim',
     'MunifTanjim/nui.nvim',
+    { 'ColinKennedy/mega.cmdparse', dependencies = { 'ColinKennedy/mega.logging' } },
     'nvim-telescope/telescope.nvim', -- file_selector provider
     'stevearc/dressing.nvim',
     {
