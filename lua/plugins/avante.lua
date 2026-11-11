@@ -2,7 +2,10 @@ return {
   'yetone/avante.nvim',
   event = 'VeryLazy',
   version = false, -- Never set this value to "*"! Never!
+  --@module 'avante'
+  --@type avante.Config
   opts = {
+    provider = 'openai',
     providers = {
       -- openai = {
       --   endpoint = 'https://api.openai.com/v1',
@@ -16,23 +19,21 @@ return {
       -- },
       claude = {
         endpoint = 'https://api.anthropic.com',
-        model = 'claude-sonnet-4-20250514',
+        model = 'claude-sonnet-5-5',
         extra_request_body = {
-          temperature = 0.75,
           max_tokens = 20480,
         },
       },
     },
-    provider = 'openai',
     file_selector = { provider = 'telescope' },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
   build = 'make',
   dependencies = {
-    'nvim-treesitter/nvim-treesitter',
     'nvim-lua/plenary.nvim',
     'MunifTanjim/nui.nvim',
     { 'ColinKennedy/mega.cmdparse', dependencies = { 'ColinKennedy/mega.logging' } },
+    'nvim-treesitter/nvim-treesitter',
     'nvim-telescope/telescope.nvim', -- file_selector provider
     'stevearc/dressing.nvim',
     {
@@ -45,7 +46,7 @@ return {
     {
       'MeanderingProgrammer/render-markdown.nvim',
       opts = {
-        file_types = { 'markdown', 'Avante' },
+        file_types = { 'markdown', 'markdown.Avante' },
         latex = { enabled = false },
       },
       ft = { 'markdown', 'Avante' },
